@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- Slick css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Style css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/dropdown.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <title>Edubin</title>
+</head>
+
+<body onscroll="stickyNav();">
+    <button onclick="topFunction()" id="bttButton" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+    <div id="main">
+        <!-- Header -->
+        <div id="header">
+
+            <!-- Header Top -->
+            <div class="header-top d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="header-contact text-center">
+                                <ul class="d-flex justify-content-start">
+                                    <li class="mr-3">
+                                        <i class="far fa-envelope mr-1"></i><span>info@yoursite.com</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone-alt mr-1"></i><span>123-456-7890</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="header-social">
+                                <p class="follow-us mr-3">Follow us:</p>
+                                <i class="fab fa-facebook-f mr-3"></i>
+                                <i class="fab fa-twitter mr-3"></i>
+                                <i class="fab fa-youtube mr-3"></i>
+                                <i class="fab fa-instagram mr-3"></i>
+                                <a href="#" class="text-darkyellow mr-3" id="login">Login</a>
+                                <p>/</p>
+                                <a href="register.html" class="text-darkyellow ml-3" id="register">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header Bottom -->
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 header-bottom-left">
+                            <a class="navbar-brand" href="#">
+                                <img src="./assets/images/logo.png" width="175" height="48" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-8 header-bottom-right">
+                            <div class="navbar navbar-expand-lg">
+                                <div class="collapse navbar-collapse sub-menu-bar">
+                                    <ul id="navbarContent" class="navbar-nav mr-auto d-flex justify-content-between">
+                                        <li class="navbar-item">
+                                            <a href="#">Home</a><i class="fas fa-chevron-down"></i>
+                                            <ul class="sub-item">
+                                                <li><a href="#" style="color: gray;">Home 1</a></li>
+                                                <li><a href="#" style="color: gray;">Home 2</a></li>
+                                                <li><a href="#" style="color: gray;">Home 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="navbar-item">
+                                            <a href="#">Courses</a><i class="fas fa-chevron-down"></i>
+                                            <ul class="sub-item">
+                                                <li><a href="#" style="color: gray;">Course 1</a></li>
+                                                <li><a href="#" style="color: gray;">Course 2</a></li>
+                                                <li><a href="#" style="color: gray;">Course 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="navbar-item">
+                                            <a href="#">Pages</a><i class="fas fa-chevron-down"></i>
+                                            <ul class="sub-item">
+                                                <li><a href="#" style="color: gray;">Page 1</a></li>
+                                                <li><a href="#" style="color: gray;">Page 2</a></li>
+                                                <li><a href="#" style="color: gray;">Page 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="navbar-item">
+                                            <a href="#">Events</a><i class="fas fa-chevron-down"></i>
+                                            <ul class="sub-item">
+                                                <li><a href="#" style="color: gray;">Event 1</a></li>
+                                                <li><a href="#" style="color: gray;">Event 2</a></li>
+                                                <li><a href="#" style="color: gray;">Event 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="navbar-item">
+                                            <a href="#">Blogs</a><i class="fas fa-chevron-down"></i>
+                                            <ul class="sub-item">
+                                                <li><a href="#" style="color: gray;">Blog 1</a></li>
+                                                <li><a href="#" style="color: gray;">Blog 2</a></li>
+                                                <li><a href="#" style="color: gray;">Blog 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="navbar-item">
+                                            <a href="#">Shop</a><i class="fas fa-chevron-down"></i>
+                                            <ul class="sub-item">
+                                                <li><a href="#" style="color: rgb(110, 96, 96);">Shop 1</a></li>
+                                                <li><a href="#" style="color: gray;">Shop 2</a></li>
+                                                <li><a href="#" style="color: gray;">Shop 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="navbar-item mr-5">
+                                            <a href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button id="btnToggleDropDown" class="navbar-toggler d-lg-none border-0" type="button">
+                                    <i class="fas fa-bars text-darkblue"></i>
+                                </button>
+                                <i class="fas fa-search m-1"></i>
+                                <i class="fas fa-shopping-cart m-1"></i><span class="badge">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dropdown mobile -->
+                <div id="mobile-dropdown" class="dropdown-mobile" style="width: 100%;">
+                    <div class="container">
+                        <div class="p-2">
+                            <div class="mobile-dropdown-item">
+                                <span>Home</span>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="mobile-dropdown-item">
+                                <span>Courses</span>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="mobile-dropdown-item">
+                                <span>Pages</span>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="mobile-dropdown-item">
+                                <span>Events</span>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="mobile-dropdown-item">
+                                <span>Blog</span>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="mobile-dropdown-item">
+                                <span>Shop</span>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="mobile-dropdown-item">
+                                <span>Contact</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+
+        <!-- Content -->
+        <div id="content">
+            <!-- Slider section -->
+            <div id="slider-section">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item carousel-image active image-1">
+                            <div class="carousel-caption">
+                                <h1 class="text-left font-weight-bold font-big pb-5">Choose The Right Theme for
+                                    Education
+                                </h1>
+                                <p class="text-left font-medium line-height-e pb-5">Lorem dummy text of the printing and
+                                    typesetting industry lorem ipsum has been the industry's standard dummy text.</p>
+                                <div class="btn__box text-left">
+                                    <button
+                                        class="btn btn-group apply-btn text-darkblue bg-dark-yellow font-weight-bold">Apply
+                                        Now</button>
+                                    <button class="btn btn-group text-darkblue bg-gray font-weight-bold">Learn
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-image image-2">
+                            <div class="carousel-caption">
+                                <h1 class="text-left font-weight-bold font-big pb-5">Choose The Right Theme for
+                                    Education
+                                </h1>
+                                <p class="text-left font-medium line-height-e pb-5">Lorem dummy text of the printing and
+                                    typesetting industry lorem ipsum has been the industry's standard dummy text.</p>
+                                <div class="btn__box text-left">
+                                    <button
+                                        class="btn btn-group apply-btn text-darkblue bg-dark-yellow font-weight-bold">Apply
+                                        Now</button>
+                                    <button class="btn btn-group text-darkblue bg-gray font-weight-bold">Learn
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-image image-3">
+                            <div class="carousel-caption">
+                                <h1 class="text-left font-weight-bold font-big pb-5">Choose The Right Theme for
+                                    Education
+                                </h1>
+                                <p class="text-left font-medium line-height-e pb-5">Lorem dummy text of the printing and
+                                    typesetting industry lorem ipsum has been the industry's standard dummy text.</p>
+                                <div class="btn__box text-left">
+                                    <button
+                                        class="btn btn-group apply-btn text-darkblue bg-dark-yellow font-weight-bold">Apply
+                                        Now</button>
+                                    <button class="btn btn-group text-darkblue bg-gray font-weight-bold">Learn
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Platform section -->
+            <div class="platform-section">
+                <div class="container">
+                    <div id="platform-wrapper" class="row">
+                        <div class="col-lg-4">
+                            <div class="platform-text">
+                                <h2>Best platform to learn everything</h2>
+                            </div>
+                        </div>
+                        <div id="platform-slider" class="col-lg-8 d-flex justify-content-center align-items-center">
+                            <div class="platform-slider-item"
+                                style="background-color: palevioletred; border-radius: 5px; width: 170px;">
+                                <div class="platform-slider-content d-flex justify-content-center flex-column">
+                                    <img src="./assets/images/courses.png" class="slider-image" alt="">
+                                    <span class="p-2 font-medium text-center">Courses</span>
+                                </div>
+                            </div>
+                            <div class="platform-slider-item"
+                                style="background-color: lightgreen; border-radius: 5px; width: 170px;">
+                                <div class="platform-slider-content d-flex justify-content-center flex-column">
+                                    <img src="./assets/images/programs.png" class="slider-image" alt="">
+                                    <span class="p-2 font-medium text-center">Programs</span>
+                                </div>
+                            </div>
+                            <div class="platform-slider-item"
+                                style="background-color: tomato; border-radius: 5px; width: 170px;">
+                                <div class="platform-slider-content d-flex justify-content-center flex-column">
+                                    <img src="./assets/images/events.png" class="slider-image" alt="">
+                                    <span class="p-2 font-medium text-center">Events</span>
+                                </div>
+                            </div>
+                            <div class="platform-slider-item"
+                                style="background-color: lightskyblue; border-radius: 5px; width: 170px;">
+                                <div class="platform-slider-content d-flex justify-content-center flex-column">
+                                    <img src="./assets/images/admissions.png" class="slider-image" alt="">
+                                    <span class="p-2 font-medium text-center">Admissions</span>
+                                </div>
+                            </div>
+                            <div class="platform-slider-item"
+                                style="background-color: green; border-radius: 5px; width: 170px;">
+                                <div class="platform-slider-content d-flex justify-content-center flex-column">
+                                    <img src="./assets/images/notice.png" class="slider-image" alt="">
+                                    <span class="p-2 font-medium text-center">Notices</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About section -->
+            <div class="about-section container">
+                <div class="about-wrap">
+                    <div class="about__header">
+                        <p class="dark-blue mb-3">About us</p>
+                    </div>
+                    <div class="horizontal__bar bg-dark-yellow mb-3" style="height: 0.25rem; width: 2.5rem;"></div>
+                    <div class="row">
+                        <div class="col-lg-6 about__left">
+                            <h2 class="about__title mb-5">Welcome to Edubin</h2>
+                            <p class="about__desc mb-3">
+                                Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit
+                                cons
+                                equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet
+                                . Morbi
+                                accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris.
+                            </p>
+                            <p class="about__desc mb-3">
+                                Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+                                cursus a
+                                sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris
+                            </p>
+                            <p class="about__desc mb-5">
+                                Buci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate
+                                cursus a
+                                sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt mauris
+                            </p>
+                            <button class="btn btn-group bg-dark-yellow">
+                                Explore more
+                            </button>
+                        </div>
+                        <div class="col-lg-6 about__right bg-white">
+                            <div class="about-wrapper pt-5 pb-3">
+                                <h2 class="about__title mb-4" style="font-size: 2.5rem;">Upcoming Events</h2>
+                                <ul class="about__list">
+                                    <li class="about__list--item">
+                                        <h3 class="mb-3">World University Convocation</h3>
+                                        <p class="mb-4"><i class="far fa-clock dark-yellow"></i> 12:00 AM To 11:59 PM
+                                        </p>
+                                        <hr>
+                                    </li>
+                                    <li class="about__list--item">
+                                        <p class="mb-4"><i class="far fa-calendar-alt dark-yellow"></i> 31. May</p>
+                                        <h3 class="mb-3">February Education Conferences</h3>
+                                        <p class="mb-4"><i class="far fa-clock dark-yellow"></i> 12:00 AM To 1:30 AM</p>
+                                        <hr>
+                                    </li>
+                                    <li class="about__list--item">
+                                        <h3 class="mb-3">The Games Education Summit</h3>
+                                        <p class="mb-4"><i class="far fa-clock dark-yellow"></i> 12:00 AM To 11:59 PM
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Apply section -->
+            <div class="apply__section container">
+                <div class="row">
+                    <div class="col-lg-6 apply__fall bg-dark-blue pl-5 pb-5">
+                        <p class="apply__title text-white pt-5 mb-4">Apply for Fall 2019</p>
+                        <p class="apply__desc text-white mb-4 mr-4">Gravida nibh vel velit auctor aliquetn
+                            sollicitudirem
+                            sem quibibendum auci elit cons equat ipsutis sem nibh id elituis sed odio sit amet nibh
+                            vulputate cursus equat ipsutis.</p>
+                        <button class="apply__btn btn btn-group dark-blue bg-dark-yellow">Apply Now</button>
+                    </div>
+                    <div class="col-lg-6 apply__scholar pl-5 pb-5" style="background-color: #092e56;">
+                        <p class="apply__title text-white pt-5 mb-4">Apply for Scholarship</p>
+                        <p class="apply__desc text-white mb-4 mr-4">Sollicitudirem sem quibibendum auci elit cons equat
+                            ipsutis sem nibh id elituis sed odio sit amet nibh vulputate cursus equat ipsutis gravida
+                            nibh
+                            vel velit auctor aliquetn.</p>
+                        <button class="apply__btn btn btn-group dark-blue bg-dark-yellow">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course section -->
+            <div class="course__section"
+                style="background-image: url('./assets/images/featured_courses_background.png');">
+                <div class="container">
+                    <div class="course__header">
+                        <p class="dark-blue mb-3">Our Course</p>
+                    </div>
+                    <div class="horizontal__bar bg-dark-yellow mb-3" style="height: 0.25rem; width: 2.5rem;"></div>
+                    <div class="course__title">
+                        <p class="text-body">Featured Courses</p>
+                    </div>
+                    
+
+                    <div class="tutor__course">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Faciclities section -->
+            <div class="facilities-section container-fluid bg-cover b">
+                <div class="test row justify-content-center align-items-center">
+                    <div class="col-lg-6 order-first order-lg-first mr-5">
+                        <!-- Video popup -->
+                        <div class="popup-video">
+                            <!-- <button type="button" class="play__button" data-toggle="modal" data-target="#myModal"> -->
+                            <a data-toggle="modal" data-target="#myModal" style="float: none;" href="#"
+                                class="play__btn">
+                            </a>
+                            <!-- </button> -->
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item"
+                                                src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 order-last order-lg-last">
+                        <div class="facilities-right">
+                            <div class="facilities-header mb-5">
+                                <h1 class="text-white font-big">Our Facilities</h1>
+                            </div>
+                            <div class="certificate d-flex justify-content-center align-items-center mb-5">
+                                <div class="certificate__icon mr-4">
+                                    <img src="./assets/images/facilites_certificate.png" width="70px"
+                                        alt="certificate-icon">
+                                </div>
+                                <div class="certificate__content">
+                                    <div class="certificate__title mb-4">
+                                        <h2 class="text-white title-group font-closeTobig">Global Certificate</h2>
+                                    </div>
+                                    <div class="certificate__desc">
+                                        <p class="text-white desc-group">Gravida nibh vel velit auctor aliquetn auci
+                                            elit cons solliazcitudirem sem quibibendum sem nibhutis.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="support d-flex align-items-center mb-5">
+                                <div class="support__icon mr-4">
+                                    <img src="./assets/images/facilites_support.png" width="70px" alt="support-icon">
+                                </div>
+                                <div class="support__content">
+                                    <div class="support__title mb-4">
+                                        <h2 class="text-white title-group font-closeTobig">Alumi Support</h2>
+                                    </div>
+                                    <div class="support__desc">
+                                        <p class="text-white desc-group">Gravida nibh vel velit auctor aliquetn auci
+                                            elit cons solliazcitudirem sem quibibendum sem nibhutis.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="booklib d-flex align-items-center">
+                                <div class="book__icon mr-4">
+                                    <img src="./assets/images/facilites_book.png" width="70px" alt="book-icon">
+                                </div>
+                                <div class="book__content">
+                                    <div class="book-title mb-4">
+                                        <h2 class="text-white title-group font-closeTobig">Book & Library</h2>
+                                    </div>
+                                    <div class="book-desc">
+                                        <p class="text-white desc-group">Gravida nibh vel velit auctor aliquetn auci
+                                            elit cons solliazcitudirem sem quibibendum sem nibhutis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Teachers section -->
+            <div class="teachers__section container">
+                <div class="row">
+                    <div class="col-lg-6 teachers-left">
+                        <div class="teachers__header">
+                            <p class="text-darkblue mb-3">Teachers</p>
+                        </div>
+                        <div class="horizontal__bar bg-dark-yellow mb-3" style="height: 0.25rem; width: 2.5rem;"></div>
+                        <div class="teachers__title mb-5">
+                            <h1 class="text-body">Meet our Teachers</h1>
+                        </div>
+                        <div class="teachers__desc mb-4">
+                            <p class="text-body mb-4">Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem
+                                quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh
+                                vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio
+                                tincidunt
+                                mauris. </p>
+                            <p class="text-body mb-4">Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit
+                                amet
+                                nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio
+                                tincidunt mauris</p>
+                            <p class="text-body">Buci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet
+                                nibh
+                                vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio
+                                tincidunt
+                                mauris</p>
+                        </div>
+                        <button class="btn btn-group bg-dark-yellow text-darkblue font-weight-bold">Career with
+                            Us</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="teacher mt-20">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div id="" class="single-teachers mb-3 text-center">
+                                        <div class="image">
+                                            <img src="./assets/images/teacher_1.jpg" width="260.75px" height="305px"
+                                                alt="Teachers">
+                                        </div>
+                                        <div
+                                            class="cont d-flex flex-column justify-content-center align-items-center mb-3">
+                                            <a href="#">
+                                                <h6 class="font-medium font-weight-bold text-darkblue mb-1">Darmian
+                                                    Green
+                                                </h6>
+                                            </a>
+                                            <span style="color: #ccc;">Chairman</span>
+                                            <div class="text-darkblue card__sociallink--teacher">
+                                                <i class="fab fa-facebook-f"></i>
+                                                <i class="fab fa-instagram"></i>
+                                                <i class="fab fa-twitter"></i>
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div id="" class="single-teachers rebeak mb-3 text-center">
+                                        <div class="image">
+                                            <img src="./assets/images/teacher_2.jpg" width="260px" height="305px"
+                                                alt="Teachers">
+                                        </div>
+                                        <div
+                                            class="cont d-flex flex-column justify-content-center align-items-center mb-3">
+                                            <a href="#">
+                                                <h6 class="font-medium font-weight-bold text-darkblue mb-1">Rebeak Alig
+                                                </h6>
+                                            </a>
+                                            <span style="color: #ccc;">Art Teacher</span>
+                                            <div class="text-darkblue card__sociallink--teacher">
+                                                <i class="fab fa-facebook-f"></i>
+                                                <i class="fab fa-instagram"></i>
+                                                <i class="fab fa-twitter"></i>
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div id="" class="single-teachers text-center">
+                                        <div class="image">
+                                            <img src="./assets/images/teacher_3.jpg" width="260px" height="305px"
+                                                alt="Teachers">
+                                        </div>
+                                        <div class="cont d-flex flex-column justify-content-center align-items-center">
+                                            <a href="#">
+                                                <h6 class="font-medium font-weight-bold text-darkblue mb-1">Hanna Ben
+                                                </h6>
+                                            </a>
+                                            <span style="color: #ccc;">Teacher</span>
+                                            <div class="text-darkblue card__sociallink--teacher">
+                                                <i class="fab fa-facebook-f"></i>
+                                                <i class="fab fa-instagram"></i>
+                                                <i class="fab fa-twitter"></i>
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <div id="" class="single-teachers alen text-center">
+                                        <div class="image">
+                                            <img src="./assets/images/teacher_4.jpg" width="260px" height="305px"
+                                                alt="Teachers">
+                                        </div>
+                                        <div class="cont d-flex flex-column justify-content-center align-items-center">
+                                            <a href="#">
+                                                <h6 class="font-medium font-weight-bold text-darkblue mb-1">Mark Alen
+                                                </h6>
+                                            </a>
+                                            <span style="color: #ccc;">Teacher</span>
+                                            <div class="text-darkblue card__sociallink--teacher">
+                                                <i class="fab fa-facebook-f"></i>
+                                                <i class="fab fa-instagram"></i>
+                                                <i class="fab fa-twitter"></i>
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedback section -->
+            <div class="feedback-section container-fluid">
+                <div class="container feedback-top">
+                    <div class="feedback-header">
+                        <p class="text-white mb-3 font-weight-bold">Feedback</p>
+                    </div>
+                    <div class="horizontal__bar bg-white mb-3" style="height: 0.25rem; width: 2.5rem;"></div>
+                    <div class="feedback-title">
+                        <p class="text-white font-weight-bold">What's Student Say</p>
+                    </div>
+                    <div id="feedback-slider" class="row">
+                        <div class="col-lg-6">
+                            <div class="single-feedback d-flex">
+                                <div class="feedback-thum">
+                                    <img src="./assets/images/student_2.jpg" alt="">
+                                    <div class="quote">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                </div>
+                                <div class="feedback-content text-white">
+                                    <p>Will you do the same for me?. I can feel a phoenix inside of me. Heaven is
+                                        jealous of
+                                        our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                                    <div style="padding-top: 1rem;">
+                                        <h5 class="mt-0 font-medium font-weight-bold">Monica Blew</h5>
+                                        <p class="mt-0">UX Designer</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="single-feedback d-flex">
+                                <div class="feedback-thum">
+                                    <img src="./assets/images/student_2.jpg" alt="">
+                                    <div class="quote">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                </div>
+                                <div class="feedback-content text-white">
+                                    <p>Will you do the same for me?. I can feel a phoenix inside of me. Heaven is
+                                        jealous of
+                                        our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                                    <div style="padding-top: 1rem;">
+                                        <h5 class="mt-0 font-medium font-weight-bold">Monica Blew</h5>
+                                        <p class="mt-0">UX Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="single-feedback d-flex">
+                                <div class="feedback-thum">
+                                    <img src="./assets/images/student_2.jpg" alt="">
+                                    <div class="quote">
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
+                                </div>
+                                <div class="feedback-content text-white">
+                                    <p>Will you do the same for me?. I can feel a phoenix inside of me. Heaven is
+                                        jealous of
+                                        our love, angels are crying from up above. Yeah, you take me to utopia.</p>
+                                    <div style="padding-top: 1rem;">
+                                        <h5 class="mt-0 font-medium font-weight-bold">Monica Blew</h5>
+                                        <p class="mt-0">UX Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Book section -->
+            <section class="book">
+                <div class="container">
+                    <div class="book__header">
+                        <div class="book-header">
+                            <p class="text-darkblue mb-3 font-weight-bold">Book Store</p>
+                        </div>
+                        <div class="horizontal__bar bg-dark-yellow mb-3" style="height: 0.25rem; width: 2.5rem;"></div>
+                        <div class="book-title">
+                            <p class="text-darkblue font-weight-bold">Publications</p>
+                            <button class="btn btn-group bg-dark-yellow text-darkblue font-weight-bold">All
+                                Product</button>
+                        </div>
+                    </div>
+                    <div class="book__list">
+                        <div class="book__item">
+                            <div class="book__img">
+                                <img src="./assets/images/book.jpg" alt="sq-sample4" />
+                                <div class="book__cart">
+                                    <a href="#" class="text-decoration-none"> <i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#" class="text-decoration-none"> <i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="book__title txt--hover">Book 9</h3>
+                                <p class="book__price">£45</p>
+                            </div>
+                        </div>
+                        <div class="book__item">
+                            <div class="book__img">
+                                <img src="./assets/images/book.jpg" alt="sq-sample4" />
+                                <div class="book__cart">
+                                    <a href="#" class="text-decoration-none"> <i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#" class="text-decoration-none"> <i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="book__title txt--hover">React JS</h3>
+                                <p class="book__price">£45</p>
+                            </div>
+                        </div>
+                        <div class="book__item">
+                            <div class="book__img">
+                                <img src="./assets/images/book.jpg" alt="sq-sample4" />
+                                <div class="book__cart">
+                                    <a href="#" class="text-decoration-none"> <i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#" class="text-decoration-none"> <i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="book__title txt--hover">Learn Javascript</h3>
+                                <p class="book__price">£45</p>
+                            </div>
+                        </div>
+                        <div class="book__item">
+                            <div class="book__img">
+                                <img src="./assets/images/book.jpg" alt="sq-sample4" />
+                                <div class="book__cart">
+                                    <a href="#" class="text-decoration-none"> <i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#" class="text-decoration-none"> <i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="book__title txt--hover">Book 6</h3>
+                                <p class="book__price">£45</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- News section -->
+            <div id="news-section" class="course__section">
+                <div class="container">
+                    <div class="course__header">
+                        <p class="dark-blue mb-3">From the News</p>
+                    </div>
+                    <div class="horizontal__bar bg-dark-yellow mb-3" style="height: 0.25rem; width: 2.5rem;"></div>
+                    <div class="course__title">
+                        <p class="text-body">Lastest News</p>
+                    </div>
+
+                    <div class="tutor__course row">
+                        <div class="col-lg-4">
+                            <div class="wrap__content bg-white">
+                                <div class="tutor__course__header">
+                                    <a href="#">
+                                        <img src="./assets/images/news_image_1.jpeg" alt="" loading="lazy" width="100%">
+                                    </a>
+                                </div>
+                                <div class="tutor__course__content">
+                                    <div class="tutor__rating__wrap mb-3">
+                                        <div class="tutor__star__rating__group">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span class="tutor__rating__num mr-2">
+                                                17 July 2019
+                                            </span>
+                                            <i class="far fa-user"></i>
+                                            <span>Mark Alen</span>
+                                        </div>
+                                    </div>
+                                    <div class="tutor__course__title mb-3">
+                                        <h2>How to Learn Faster and Remember</h2>
+                                    </div>
+
+                                    <div class="tutor-loop-author mb-3">
+                                        <p style="color: #acacac; line-height: 1.4;">Scelerisque ante platea nullam
+                                            himenaeos quam sollicitudin ullamcorper sodales tristique</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="wrap__content bg-white">
+                                <div class="tutor__course__header">
+                                    <a href="#">
+                                        <img src="./assets/images/news_image_1.jpeg" alt="" loading="lazy" width="100%">
+                                    </a>
+                                </div>
+                                <div class="tutor__course__content">
+                                    <div class="tutor__rating__wrap mb-3">
+                                        <div class="tutor__star__rating__group">
+                                            <i class="fas fa-calendar-alt"></i>
+                                            <span class="tutor__rating__num mr-2">
+                                                17 July 2019
+                                            </span>
+                                            <i class="far fa-user"></i>
+                                            <span>Mark Alen</span>
+                                        </div>
+                                    </div>
+                                    <div class="tutor__course__title mb-3">
+                                        <h2>How to Learn Faster and Remember</h2>
+                                    </div>
+
+                                    <div class="tutor-loop-author mb-3">
+                                        <p style="color: #acacac; line-height: 1.4;">Scelerisque ante platea nullam
+                                            himenaeos quam sollicitudin ullamcorper sodales tristique</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="wrap__content bg-white">
+                                <div class="tutor__course__header">
+                                    <a href="#">
+                                        <img src="./assets/images/news_image_1.jpeg" alt="" loading="lazy" width="100%">
+                                    </a>
+                                </div>
+                                <div class="tutor__course__content">
+                                    <div class="tutor__rating__wrap mb-3">
+                                        <div class="tutor__star__rating__group">
+                                            <i class="fas fa-calendar-alt"></i>
+
+                                            <span class="tutor__rating__num mr-2">
+                                                17 July 2019
+                                            </span>
+                                            <i class="far fa-user"></i>
+                                            <span>Mark Alen</span>
+                                        </div>
+                                    </div>
+                                    <div class="tutor__course__title mb-3">
+                                        <h2>How to Learn Faster and Remember</h2>
+                                    </div>
+
+                                    <div class="tutor-loop-author mb-3">
+                                        <p style="color: #acacac; line-height: 1.4;">Scelerisque ante platea nullam
+                                            himenaeos quam sollicitudin ullamcorper sodales tristique</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logo section -->
+            <section class="logo">
+                <div class="container">
+                    <ul class="logo__list">
+                        <li class="logo__item">
+                            <img src="./assets/images/icon1.png" alt="">
+                        </li>
+                        <li class="logo__item">
+                            <img src="./assets/images/icon2.png" alt="">
+                        </li>
+                        <li class="logo__item">
+                            <img src="./assets/images/icon3.png" alt="">
+                        </li>
+                        <li class="logo__item">
+                            <img src="./assets/images/icon4.png" alt="">
+                        </li>
+                        <li class="logo__item">
+                            <img src="./assets/images/icon5.png" alt="">
+                        </li>
+                        <li class="logo__item">
+                            <img src="./assets/images/icon4.png" alt="">
+                        </li>
+                        <li class="logo__item">
+                            <img src="./assets/images/icon3.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer__social col-lg-4 col-md-6">
+                        <div class="footer__logo">
+                            <img src="./assets/images/white-logo.png" width="180px" height="49px" alt="">
+                        </div>
+                        <p class="footer__desc" style="line-height: 1.4; margin-top: 1.5rem;">
+                            Edubin perfect for online courses and other institutes. It’s a complete solution with
+                            lmsfeatures and functionalities.
+                        </p>
+                        <ul class="footer__icon">
+                            <li><i class="fab fa-facebook-f"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-youtube"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                        </ul>
+                    </div>
+                    <div class="footer__link col-lg-3 col-md-6">
+                        <h2 class="footer__caption">Feature Links</h2>
+                        <div class="footer__box">
+                            <ul class="footer__list">
+                                <li><i class="fas fa-chevron-right"></i>About Us</li>
+                                <li><i class="fas fa-chevron-right"></i>Graduation</li>
+                                <li><i class="fas fa-chevron-right"></i>Scholarship</li>
+                                <li><i class="fas fa-chevron-right"></i>Contact</li>
+                                <li><i class="fas fa-chevron-right"></i>Result</li>
+                            </ul>
+                            <ul class="footer__list">
+                                <li><i class="fas fa-chevron-right"></i>Admissions</li>
+                                <li><i class="fas fa-chevron-right"></i>International</li>
+                                <li><i class="fas fa-chevron-right"></i>Teachers</li>
+                                <li><i class="fas fa-chevron-right"></i>Alumni</li>
+                                <li><i class="fas fa-chevron-right"></i>Events</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__support col-lg-2 col-md-6">
+                        <h2 class="footer__caption">Support</h2>
+                        <ul class="footer__list">
+                            <li><i class="fas fa-chevron-right"></i>Language</li>
+                            <li><i class="fas fa-chevron-right"></i>WordPress</li>
+                            <li><i class="fas fa-chevron-right"></i>Privacy</li>
+                            <li><i class="fas fa-chevron-right"></i>FAQs</li>
+                            <li><i class="fas fa-chevron-right"></i>Support</li>
+                        </ul>
+                    </div>
+                    <div class="footer__contact col-lg-3 col-md-6">
+                        <h2 class="footer__caption">Contact Us</h2>
+                        <p class="footer__desc pt-3" style="line-height: 1.4;">203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
+                        <ul class="footer__ pb-3">
+                            <li><i class="fas fa-phone-volume mb-2"></i> +1 23-4567-8920</li>
+                            <li><i class="far fa-envelope mb-2"></i> info@yourmail.com</li>
+                            <li><i class="fas fa-globe mb-2"></i> www.yourdomain.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="footer__bot">
+            <div class="footer__copyright container">
+                <p class="footer__desc">© 2021 Pixelcurve. All rights reserved.</p>
+                <ul style="padding-top: 0.5rem;">
+                    <li>Language</li>
+                    <li>WordPress</li>
+                    <li>Privacy</li>
+                    <li>FAQs</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    </div>
+
+    <!-- Slick js -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/courseAPI.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#platform-slider').slick({
+                lazyLoad: 'ondemand',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: "<i class='fas fa-chevron-circle-left'></i>",
+                nextArrow: "<i class='fas fa-chevron-circle-right'></i>",
+                responsive: [
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                ]
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#feedback-slider').slick({
+                dots: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: 0,
+                nextArrow: 0,
+                responsive: [
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                ]
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.logo__list').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                // infinite: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                nextArrow: 0,
+                prevArrow: 0,
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                }
+                ]
+            });
+        })
+
+    </script>
+</body>
+
+</html>

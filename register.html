@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Jquery Validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!-- Style css -->
+    <link rel="stylesheet" href="./assets/css/register.css">
+    <link rel="stylesheet" href="./assets/css/dropdown.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <title>Register</title>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="bttButton" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+    <div id="main-page">
+        <!-- Header -->
+        <div id="header">
+
+            <!-- Header Top -->
+            <div class="header-top d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="header-contact text-center">
+                                <ul class="d-flex justify-content-start">
+                                    <li class="mr-3">
+                                        <i class="far fa-envelope mr-1"></i><span>info@yoursite.com</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone-alt mr-1"></i><span>123-456-7890</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="header-social">
+                                <p class="follow-us mr-3">Follow us:</p>
+                                <i class="fab fa-facebook-f mr-3"></i>
+                                <i class="fab fa-twitter mr-3"></i>
+                                <i class="fab fa-youtube mr-3"></i>
+                                <i class="fab fa-instagram mr-3"></i>
+                                <a href="#" class="text-darkyellow mr-3" id="login">Login</a>
+                                <p>/</p>
+                                <a href="#" class="text-darkyellow ml-3" id="register">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header Bottom -->
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 header-bottom-left">
+                            <a class="navbar-brand" href="#">
+                                <img src="./assets/images/logo.png" width="175" height="48" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-8 header-bottom-right">
+                            <div class="navbar navbar-expand-lg">
+                                <div class="collapse navbar-collapse sub-menu-bar">
+                                    <ul id="navbarContent" class="navbar-nav mr-auto d-flex justify-content-between">
+                                        <li class="navbar-item">
+                                            <a href="#">Home</a><i class="fas fa-chevron-down"></i>
+                                            <ul class="sub-item">
+                                                <li><a href="#" style="color: gray;">Home 1</a></li>
+                                                <li><a href="#" style="color: gray;">Home 2</a></li>
+                                                <li><a href="#" style="color: gray;">Home 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="navbar-item">
+                                            <a href="#">Courses</a><i class="fas fa-chevron-down"></i>
+                                            <ul class="sub-item">
+                                                <li><a href="#" style="color: gray;">Course 1</a></li>
+                                                <li><a href="#" style="color: gray;">Course 2</a></li>
+                                                <li><a href="#" style="color: gray;">Course 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="navbar-item">
+                                            <a href="#">Pages</a><i class="fas fa-chevron-down"></i>
+                                            <ul class="sub-item">
+                                                <li><a href="#" style="color: gray;">Page 1</a></li>
+                                                <li><a href="#" style="color: gray;">Page 2</a></li>
+                                                <li><a href="#" style="color: gray;">Page 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="navbar-item">
+                                            <a href="#">Events</a><i class="fas fa-chevron-down"></i>
+                                            <ul class="sub-item">
+                                                <li><a href="#" style="color: gray;">Event 1</a></li>
+                                                <li><a href="#" style="color: gray;">Event 2</a></li>
+                                                <li><a href="#" style="color: gray;">Event 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="navbar-item">
+                                            <a href="#">Blogs</a><i class="fas fa-chevron-down"></i>
+                                            <ul class="sub-item">
+                                                <li><a href="#" style="color: gray;">Blog 1</a></li>
+                                                <li><a href="#" style="color: gray;">Blog 2</a></li>
+                                                <li><a href="#" style="color: gray;">Blog 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="navbar-item">
+                                            <a href="#">Shop</a><i class="fas fa-chevron-down"></i>
+                                            <ul class="sub-item">
+                                                <li><a href="#" style="color: rgb(110, 96, 96);">Shop 1</a></li>
+                                                <li><a href="#" style="color: gray;">Shop 2</a></li>
+                                                <li><a href="#" style="color: gray;">Shop 3</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="navbar-item mr-5">
+                                            <a href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button id="btnToggleDropDown" class="navbar-toggler d-lg-none border-0" type="button">
+                                    <i class="fas fa-bars text-darkblue"></i>
+                                </button>
+                                <i class="fas fa-search m-1"></i>
+                                <i class="fas fa-shopping-cart m-1"></i><span class="badge">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dropdown mobile -->
+                <div id="mobile-dropdown" class="dropdown-mobile" style="width: 100%;">
+                    <div class="container">
+                        <div class="p-2">
+                            <div class="mobile-dropdown-item">
+                                <span>Home</span>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="mobile-dropdown-item">
+                                <span>Courses</span>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="mobile-dropdown-item">
+                                <span>Pages</span>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="mobile-dropdown-item">
+                                <span>Events</span>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="mobile-dropdown-item">
+                                <span>Blog</span>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="mobile-dropdown-item">
+                                <span>Shop</span>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="mobile-dropdown-item">
+                                <span>Contact</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+
+        <!-- Content -->
+        <div id="content">
+            <div id="content-header">
+                <div class="container content-text">
+                    <h1 class="content-header-title">Student Registation</h1>
+                    <p class="content-header-desc">Home / Student Registation</p>
+                </div>
+            </div>
+
+            <div id="content-form">
+                <form id="register-form" style="padding: 4rem 3rem;">
+                    <div class="form-group">
+                        <label for="exampleInputFName" class="label-group mb-2">First Name</label>
+                        <input style="width: 32rem;
+                        height: 3rem;" type="text" class="form-control" id="exampleInputFName"
+                            placeholder="First Name" name="fname">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputLName" class="label-group mb-2">Last Name</label>
+                        <input style="width: 32rem;
+                        height: 3rem;" type="text" class="form-control" id="exampleInputLName" placeholder="Last Name" name="lname">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputUsername" class="label-group mb-2">Username</label>
+                        <input style="width: 32rem;
+                        height: 3rem;" type="text" class="form-control" id="exampleInputUsername"
+                            placeholder="Username" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="label-group mb-2">E-Mail</label>
+                        <input style="width: 32rem;
+                        height: 3rem;" type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="E-Mail" name="mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" class="label-group mb-2">Password</label>
+                        <input style="width: 32rem;
+                        height: 3rem;" type="password" class="form-control" id="exampleInputPassword1"
+                            placeholder="Password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputCfPassword" class="label-group mb-2">Password Confirmation</label>
+                        <input style="width: 32rem;
+                        height: 3rem;" type="password" class="form-control" id="exampleInputCfPassword"
+                            placeholder="Password Confirmation" name="re_password">
+                    </div>
+                    <button style="width: 7rem; height: 3rem;">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- End Content -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer__social col-lg-4 col-md-6">
+                        <div class="footer__logo">
+                            <img src="./assets/images/white-logo.png" width="180px" height="49px" alt="">
+                        </div>
+                        <p class="footer__desc" style="line-height: 1.4; margin-top: 1.5rem;">
+                            Edubin perfect for online courses and other institutes. It’s a complete solution with
+                            lmsfeatures and functionalities.
+                        </p>
+                        <ul class="footer__icon">
+                            <li><i class="fab fa-facebook-f"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-youtube"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                        </ul>
+                    </div>
+                    <div class="footer__link col-lg-3 col-md-6">
+                        <h2 class="footer__caption">Feature Links</h2>
+                        <div class="footer__box">
+                            <ul class="footer__list">
+                                <li><i class="fas fa-chevron-right"></i>About Us</li>
+                                <li><i class="fas fa-chevron-right"></i>Graduation</li>
+                                <li><i class="fas fa-chevron-right"></i>Scholarship</li>
+                                <li><i class="fas fa-chevron-right"></i>Contact</li>
+                                <li><i class="fas fa-chevron-right"></i>Result</li>
+                            </ul>
+                            <ul class="footer__list">
+                                <li><i class="fas fa-chevron-right"></i>Admissions</li>
+                                <li><i class="fas fa-chevron-right"></i>International</li>
+                                <li><i class="fas fa-chevron-right"></i>Teachers</li>
+                                <li><i class="fas fa-chevron-right"></i>Alumni</li>
+                                <li><i class="fas fa-chevron-right"></i>Events</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__support col-lg-2 col-md-6">
+                        <h2 class="footer__caption">Support</h2>
+                        <ul class="footer__list">
+                            <li><i class="fas fa-chevron-right"></i>Language</li>
+                            <li><i class="fas fa-chevron-right"></i>WordPress</li>
+                            <li><i class="fas fa-chevron-right"></i>Privacy</li>
+                            <li><i class="fas fa-chevron-right"></i>FAQs</li>
+                            <li><i class="fas fa-chevron-right"></i>Support</li>
+                        </ul>
+                    </div>
+                    <div class="footer__contact col-lg-3 col-md-6">
+                        <h2 class="footer__caption">Contact Us</h2>
+                        <p class="footer__desc pt-3" style="line-height: 1.4;">203, Envato Labs, Behind Alis Steet,
+                            Melbourne, Australia.</p>
+                        <ul class="footer__ pb-3">
+                            <li><i class="fas fa-phone-volume mb-2"></i> +1 23-4567-8920</li>
+                            <li><i class="far fa-envelope mb-2"></i> info@yourmail.com</li>
+                            <li><i class="fas fa-globe mb-2"></i> www.yourdomain.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="footer__bot">
+            <div class="footer__copyright container">
+                <p class="footer__desc">© 2021 Pixelcurve. All rights reserved.</p>
+                <ul style="padding-top: 0.5rem;">
+                    <li>Language</li>
+                    <li>WordPress</li>
+                    <li>Privacy</li>
+                    <li>FAQs</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+
+    <script src="./assets/js/register.js"></script>
+</body>
+
+</html>
